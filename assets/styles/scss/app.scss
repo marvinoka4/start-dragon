@@ -8,6 +8,7 @@
 
 @import 'global/settings';
 @import 'global/foundation';
+@import "modules/mixins";
 @import 'motion-ui';
 
 // Global styles
@@ -73,8 +74,8 @@
 //Import custom scss files
 @import "global/colors";
 @import "global/typography";
+@import "layout/content";
 @import "layout/footer";
 @import "layout/header";
 @import "layout/layout";
-@import "modules/mixins";
 @import "modules/hamburger";
