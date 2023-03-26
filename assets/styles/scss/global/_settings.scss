@@ -62,7 +62,7 @@ $foundation-palette: (
 
 $body-background: white;
 $body-font-color: get-color(dark-grey);
-$body-font-family: 'Gilroy', Gilroy, Arial, sans-serif;
+$body-font-family: 'Gilroy-Medium', Gilroy, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -122,44 +122,29 @@ $block-grid-max: 8;
 
 // 4. Base Typography
 // ------------------
-
 @font-face {
-  font-family: 'Gilroy-Light';
-  src: url('../../../fonts/gilroylight-webfont.woff2') format('woff2'),
-  url('../../../fonts/gilroylight-webfont.woff') format('woff');
+  font-family: 'Gilroy-Regular';
+  src: url('../../fonts/gilroy/gilroyregular-webfont.woff2') format('woff2'),
+  url('../../fonts/gilroy/gilroyregular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url('../../fonts/gilroy/gilroymedium-webfont.woff2') format('woff2'),
+  url('../../fonts/gilroy/gilroymedium-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Gilroy-Bold';
-  src: url('../../../fonts/gilroybold-webfont.woff2') format('woff2'),
-  url('../../../fonts/gilroybold-webfont.woff') format('woff');
+  src: url('../../fonts/gilroy/gilroybold-webfont.woff2') format('woff2'),
+  url('../../fonts/gilroy/gilroybold-webfont.woff') format('woff');
   font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Gilroy-MediumItalic';
-  src: url('../../../fonts/gilroymediumitalic-webfont.woff2') format('woff2'),
-  url('../../../fonts/gilroymediumitalic-webfont.woff') format('woff');
-  font-weight: bold;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Gilroy-Medium';
-  src: url('../../../fonts/gilroymedium-webfont.woff2') format('woff2'),
-  url('../../../fonts/gilroymedium-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Gilroy-Regular';
-  src: url('../../../fonts/gilroyregular-webfont.woff2') format('woff2'),
-  url('../../../fonts/gilroyregular-webfont.woff') format('woff');
-  font-weight: normal;
   font-style: normal;
 }
 
-$header-font-family: 'Gilroy', Gilroy, Roboto, Arial, sans-serif;
+$header-font-family: 'Gilroy-Bold', Gilroy, Arial, sans-serif;
 $header-font-weight: bold;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
