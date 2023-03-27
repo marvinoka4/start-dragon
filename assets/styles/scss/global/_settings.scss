@@ -39,6 +39,8 @@
 //  54. Tooltip
 //  55. Top Bar
 //  56. Xy Grid
+//  57. Theme
+//  58. Icons
 
 @import '../../../../node_modules/foundation-sites/scss/util/util';
 
@@ -142,6 +144,20 @@ $block-grid-max: 8;
   url('../../fonts/gilroy/gilroybold-webfont.woff') format('woff');
   font-weight: bold;
   font-style: normal;
+}
+@font-face {
+  font-family: "Unicons";
+  src: url(../../fonts/unicons/Unicons.woff2) format('woff2'), url(../../fonts/unicons/Unicons.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "Custom";
+  src: url(../../fonts/custom/Custom.woff2) format('woff2'), url(../../fonts/custom/Custom.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
 
 $header-font-family: 'Gilroy-Bold', Gilroy, Arial, sans-serif;
@@ -723,3 +739,33 @@ $grid-padding-gutters: $grid-margin-gutters;
 $grid-container-padding: $grid-padding-gutters;
 $grid-container-max: $global-width;
 $xy-block-grid-max: 8;
+
+// 57. Theme
+// -----------
+$zindex-fixed: 2000;
+
+
+//----------------------------------------------------------//
+//	58. Icons
+//----------------------------------------------------------//
+$icon-close: "\ed3b" !default;
+$icon-search: "\eca5" !default;
+$icon-prev: "\e949" !default;
+$icon-next: "\e94c" !default;
+$icon-quote: "\201D" !default;
+$icon-quote-top: "\201C" !default;
+$icon-dot: "\2022" !default;
+$icon-caret-start: "\e92f" !default;
+$icon-caret-end: "\e931" !default;
+$icon-caret-up: "\e932" !default;
+$icon-caret-down: "\e92d" !default;
+$icon-more: "\e94c" !default;
+$icon-page-progress: "\e951" !default;
+$icon-line: "\e904" !default;
+$icon-external: "\e906" !default;
+$icon-internal: "\e94c" !default;
+$icon-folder: "\eb34" !default;
+$icon-file: "\eaed" !default;
+$icon-code: "\e952" !default;
+$icon-terminal: "\e905" !default;
+$icon-kbd: "\eba9" !default;
