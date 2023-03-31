@@ -225,6 +225,8 @@ $keystroke-background: get-color(light-grey);
 $keystroke-padding: rem-calc(2 4 0);
 $keystroke-radius: $global-radius;
 $abbr-underline: 1px dotted $body-font-color;
+$font-family-custom-icons: "Custom" !default;
+$font-family-unicons: "Unicons" !default;
 
 // 5. Typography Helpers
 // ---------------------
